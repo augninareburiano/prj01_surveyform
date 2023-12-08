@@ -1,0 +1,42 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+    /* border: 1px solid #000; */
+}
+h1, p{
+    text-align: center;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-color: #ff892e;
+}
+form{
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px;
+    margin: auto;
+    background-color: #ffa763;
+
+    width: 40%;
+}
+pre{
+    margin-bottom: 5px;
+}
+.divider{
+    display: flex;
+    flex-direction: column;
+}
+.dropdown-menu{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    gap: 20px;
+}
+.comment-section{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}

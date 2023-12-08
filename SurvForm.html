@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dog Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="header">
+        <h1 id="title">Dog Survey Form</h1>
+        <p id="description">Survey for gathering information about people's favorite dog breed</p>
+    </div>
+    <form action="" id="survey-form">
+        <div class="divider">
+            <label for="name" id="name-label">Enter Name: </label>
+            <input type="text" name="name" id="name" placeholder="Augnina" required>
+        </div>
+
+        <div class="divider">
+            <label for="email" id="email-label">Enter E-Mail: </label>
+            <input type="email" name="email" id="email" placeholder="reburianonina@gmail.com" required>
+        </div>
+
+        <div class="divider">
+            <label for="number" id="number-label">How many dogs do you have? </label>
+            <input type="number" name="number" id="number" min="0" max="20" placeholder="3">
+        </div>
+        <div class="dropdown-menu">
+            <label for="dropdown">Dog Gender: </label>
+            <select name="dropdown" id="dropdown">
+                <option value="">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+        </div>
+        <pre>What breed are they?</pre>
+        <div class="checkboxes">
+            <input type="checkbox" id="breed-1" name="breed-1" value="shiba">
+            <label for="breed-1"> Shiba Inu</label><br>
+        </div>
+        <div class="checkboxes">
+            <input type="checkbox" id="breed-2" name="breed-2" value="pom">
+            <label for="breed-2"> Pomeranian</label><br>
+        </div>
+        <div class="checkboxes">
+            <input type="checkbox" id="breed-3" name="breed-3" value="chow">
+            <label for="breed-3"> Chow Chow</label><br>
+        </div>
+        <pre>Allergies?</pre>
+        <div class="radios">
+            <input type="radio" name="allergies" id="yes" value="yes">
+            <label for="yes">Positive</label>
+            <input type="radio" name="allergies" id="no" value="no">
+            <label for="yes">Negative</label>
+        </div>
+        <div class="comment-section">
+            <label for="comment">Any Questions? </label>
+            <textarea name="" id="comment" cols="30" rows="10"></textarea>
+        </div>
+        <button type="submit" id="submit">SUBMIT</button>
+    </form>
+</body>
+</html>
